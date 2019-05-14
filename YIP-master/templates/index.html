@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,9 +9,9 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/aos.css') }}">
-  <link rel="short icon" type="image/jpg" href="{{url_for('static', filename='img/logo.jpg')}}" >
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="aos.css">
+  <link rel="short icon" type="image/jpg" href="logo.jpg">
 
 </head>
 <title>Young Innovators' Program, IIT Kharagpur </title>
@@ -45,7 +46,7 @@ a img{
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  -moz-font-feature-settings : 'liga';
+  -moz-font-feature-settings: 'liga';
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -143,7 +144,6 @@ a img{
   transform: rotate(45deg);
 }*/
 </style>
-
 <body id="home" class="scrollspy">
 	  <!-- Page preloader -->
         <div id="hola">
@@ -158,8 +158,8 @@ a img{
   <div class="navbar-fixed"style="position: absolute;">
     <nav class="transparent z-depth-0" id="bar1">
         <div class="nav-wrapper">
-          <a href="http://www.iitkgp.ac.in/" class="brand-logo left" style="margin-top: 10px;"><img src="{{url_for('static', filename='img/kgp.png')}}"></a>
-          <a href="http://www.barc.iitkgp.ac.in/" class="brand-logo right" style="margin-top: 10px;"><img src="{{url_for('static', filename='img/barc.png')}}"></a>
+          <a href="http://www.iitkgp.ac.in/" class="brand-logo left" style="margin-top: 10px;"><img src="./img/kgp.png"></a>
+          <a href="http://www.barc.iitkgp.ac.in/" class="brand-logo right" style="margin-top: 10px;"><img src="./img/yip.png"></a>
         </div>
     </nav>
   </div>
@@ -180,8 +180,17 @@ a img{
 
   <ul class="sidenav" id="mobile-nav">
   	        <li>
-              <img src="{{url_for('static', filename='img/yip.png')}}" id="yipimg">
+              <img src="./img/yip.png" id="yipimg">
             </li>
+             <li>
+              <a href="#register">Register</a>
+            </li>
+<!--             <li>
+              <a href="signup_index.html">Sign Up</a>
+            </li>
+            <li>
+              <a href="login_index.html">Sign In</a>
+            </li> -->
             <li>
               <a href="#about">About YIP</a>
             </li>
@@ -207,16 +216,10 @@ a img{
               <a href="#testi">Testimonials</a>
             </li>
             <li>
-              <a href="rules_index">Rules</a>
+              <a href="rules_index.html">Rules</a>
             </li>
             <li>
-              <a href="awards_index">Awards</a>
-            </li>
-			<li>
-              <a href="signup_index">Sign Up</a>
-            </li>
-            <li>
-              <a href="login_index">Sign In</a>
+              <a href="awards_index.html">Awards</a>
             </li>
   </ul>
   </section>
@@ -228,18 +231,18 @@ a img{
     <ul class="slides">
       <li>
         
-        <img src="{{url_for('static', filename='img/car1.png')}}">
+        <img src="./img/car1.jpg">
       </li>
       <li>
-        <img src="{{url_for('static', filename='img/car5.jpg')}}">
+        <img src="./img/car5.jpg">
       </li>
       <li>
-        <img src="{{url_for('static', filename='img/car3.jpg')}}">
+        <img src="./img/car3.jpg">
         <li>
-        <img src="{{url_for('static', filename='img/car4.jpg')}}">
+        <img src="./img/car4.jpg">
       </li>
       <li>
-          <img src="{{url_for('static', filename='img/sel2.jpg')}}">
+        <img src="./img/sel2.jpg">
       </li>
     </ul> 
   </div>
@@ -263,13 +266,12 @@ a img{
       </div>
     </div>
   </div>
-
-    <br>
+  <br>
 <h2 class="center green-text scrollspy" id="win">Winners of YIP 2018</h2>
   <section class="container section">
     <div class="row">
       <div class="col s12 l4">
-          <img src="{{url_for('static', filename='img/winner.png')}}" alt="" data-aos="fade-up" data-aos-duration="1000" class="responsive-img materialboxed">
+          <img src="img/winner.png" alt="" data-aos="fade-up" data-aos-duration="1000" class="responsive-img materialboxed">
       </div>
       <div class="col s12 l6 offset-l1">
         <h2 class="indigo-text text-darken-4" data-aos="fade-up" data-aos-duration="2000">Kaanger Valley Academy</h2>
@@ -278,7 +280,7 @@ a img{
     </div>
     <div class="row">
       <div class="col s12 l4 offset-l1 push-l7">
-          <img src="{{url_for('static', filename='img/runner1.png')}}" alt="" data-aos="fade-up" data-aos-duration="1000" class="responsive-img materialboxed">
+          <img src="img/runner1.png" alt="" data-aos="fade-up" data-aos-duration="1000" class="responsive-img materialboxed">
       </div>
       <div class="col s12 l6 offset-l1 pull-l5 right-align">
         <h2 class="indigo-text text-darken-4" data-aos="fade-up" data-aos-duration="2000">The Crossword School</h2>
@@ -287,7 +289,7 @@ a img{
     </div>
     <div class="row">
       <div class="col s12 l4">
-          <img src="{{url_for('static', filename='img/runner2.png')}}" alt="" data-aos="fade-up" data-aos-duration="1000" class="responsive-img materialboxed">
+          <img src="img/runner2.png" alt="" data-aos="fade-up" data-aos-duration="1000" class="responsive-img materialboxed">
       </div>
       <div class="col s12 l6 offset-l1">
         <h2 class="indigo-text text-darken-4" data-aos="fade-up" data-aos-duration="2000">Tarapore School</h2>
@@ -297,16 +299,76 @@ a img{
   </section>
 <br>
 
+<!-- froms -->
+  <div class="row container scrollspy" id="register">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s4"><a href="#signIn">Sign In</a></li>
+        <li class="tab col s4"><a href="#signUp">Sign Up</a></li>
+      </ul>
+    </div>
+    <div id="signIn" class="col s10">
+      <form id="__signin__">
+    	<div class="row">
+        <div class="input-field col s12">
+          <input id="email_in" type="email" class="validate">
+          <label for="email_in">Email</label>
+          <span class="helper-text" data-error="wrong" data-success="right">example@gmail.com</span>
+        </div>
+        <div class="input-field col s12">
+          <input id="password_in" type="password" class="validate">
+          <label for="password_in">Password</label>
+        </div>
+            <button class="btn waves-effect waves-light" type="submit" form="__signin__">Sign In
+   				 <i class="material-icons right">send</i>
+  			</button>
+      </div>
+   	</form>
+    </div>
+    <div id="signUp" class="col s10">
+    	      <form id="__signup__">
+    	<div class="row">
+        <div class="input-field col s12">
+          <input id="email_up" type="email" class="validate">
+          <label for="email_up">Email</label>
+          <span class="helper-text" data-error="wrong" data-success="right">example@gmail.com</span>
+        </div>
+
+        <div class="input-field col s12">
+	      <input id="user_name" type="text" class="validate">
+	      <label for="user_name">User Name</label>
+	    </div>
+
+
+        <div class="input-field col s12">
+          <input id="password_up" type="password" class="validate">
+          <label for="password_up">Password</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="password_cup" type="password" class="validate">
+          <label for="password_cup">Confirm Password</label>
+        </div>
+
+            <button class="btn waves-effect waves-light green" type="submit" form="__signup__">Sign Up
+   				 <i class="material-icons right">send</i>
+  			</button>
+      </div>
+   	</form>
+    </div>
+  </div>
+
 
 
   <!-- Icon Boxes -->
+  <br>
   <section class="section section-icons grey lighten-4 center scrollspy" id="Themes">
     <div class="container scrollspy">
       <h2 class="center" data-aos="fade-up" data-aos-duration="2000">Themes</h2>
       <div class="row">
         <div class="col s12 m4">
           <div class="card-panel" data-aos="flip-left" data-aos-duration="3000">
-          	<img src="{{url_for('static', filename='svg/smartphone.svg')}}" width="100px" height="100px">
+          	<img src="./svg/smartphone.svg" width="100px" height="100px">
             <h5>Product Designing</h5>
             <div class="card-action">
             	<!-- a href="../tempDetails/product.html">More Details</a> -->
@@ -315,7 +377,7 @@ a img{
         </div>
         <div class="col s12 m4">
           <div class="card-panel" data-aos="flip-left" data-aos-duration="3000">
-          	<img src="{{url_for('static', filename='svg/recycling.svg')}}" width="100px" height="100px">
+          	<img src="./svg/recycling.svg" width="100px" height="100px">
             <h5> Resource Management </h5>
             <div class="card-action">
             	<!--<a href="../ tempDetails/resourceManagement.html">More Details</a> -->
@@ -324,7 +386,7 @@ a img{
         </div>
         <div class="col s12 m4">
           <div class="card-panel" data-aos="flip-left" data-aos-duration="3000">
-			<img src="{{url_for('static', filename='svg/apple.svg')}}" width="100px" height="100px">
+			<img src="./svg/apple.svg" width="100px" height="100px">
             <h5> Health &amp; Cleanliness </h5>
             <div class="card-action">
             	<!-- <a href="../tempDetails/health.html">More Details</a> -->
@@ -333,7 +395,7 @@ a img{
         </div>
         <div class="col s12 m4">
           <div class="card-panel" data-aos="flip-left" data-aos-duration="3000">
-			<img src="{{url_for('static', filename='svg/burn.svg')}}" width="100px" height="100px">
+			<img src="./svg/burn.svg" width="100px" height="100px">
             <h5>Clean Energy </h5>
             <div class="card-action">
             </div>
@@ -341,7 +403,7 @@ a img{
         </div>
         <div class="col s12 m4">
           <div class="card-panel" data-aos="flip-left" data-aos-duration="3000">
-          	<img src="{{url_for('static', filename='svg/technological.svg')}}" width="100px" height="100px">
+          	<img src="./svg/technological.svg" width="100px" height="100px">
             <h5>Hardware Modelling</h5>
             <div class="card-action">
            <!--  	<a href="../tempDetails/hard.html">More Details</a> -->
@@ -350,7 +412,7 @@ a img{
         </div>
         <div class="col s12 m4">
           <div class="card-panel" data-aos="flip-left" data-aos-duration="3000">
-          	<img src="{{url_for('static', filename='img/images.png')}}" width="100px" height="100px" style="border-radius: 50%;">
+          	<img src="./img/images.png" width="100px" height="100px" style="border-radius: 50%;">
             <h5>Disaster Management </h5>
             <div class="card-action">
             	<!-- <a href="../tempDetails/disman.html">More Details</a> -->
@@ -367,8 +429,8 @@ a img{
 <h2 class="center purple-text">Gallery</h2>
 
 
-<div id="gal">
-  <div class="carousel carousel-slider center " data-indicators="true">
+<div id="gal" class="scrollspy">
+  <div class="carousel carousel-slider center" id="first_one">
     <div class="carousel-fixed-item center middle-indicator">
      <div class="left">
       <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
@@ -378,20 +440,20 @@ a img{
      <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
      </div>
     </div>
-    <div class="carousel-item red white-text" href="#one!">
-      <img src="{{url_for('static', filename='img/sel1.jpg')}}">
+    <div class="carousel-item" href="#one!">
+      <img src="./img/sel1.jpg">
     </div>
-    <div class="carousel-item amber white-text" href="#two!">
-      <img src="{{url_for('static', filename='img/sel2.jpg')}}">
+    <div class="carousel-item" href="#two!">
+      <img src="./img/sel2.jpg">
     </div>
-    <div class="carousel-item blue white-text" href="#three!">
-      <img src="{{url_for('static', filename='img/sel4.jpg')}}">
+    <div class="carousel-item" href="#three!">
+      <img src="./img/sel4.jpg">
     </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <img src="{{url_for('static', filename='img/sel5.jpg')}}">
+    <div class="carousel-item" href="#four!">
+      <img src="./img/sel5.jpg">
     </div>
-    <div class="carousel-item blue white-text" href="#five!">
-      <img src="{{url_for('static', filename='img/sel6.jpg')}}">
+    <div class="carousel-item" href="#five!">
+      <img src="./img/sel6.jpg">
     </div>
   </div>
 
@@ -415,32 +477,29 @@ a img{
 <br>
 
 <!--     <div class="parallax-container">
-      <div class="parallax"><img src="{{url_for('static', filename='img/par.jpg')}}"></div>
+      <div class="parallax"><img src="./img/par.jpg"></div>
     </div> -->
-
-        <div class="container scrollspy" id="media">
-      <h2 class="center indigo-text">Media Outreach</h2>
+    <div class="container scrollspy" id="media">
+    	<h2 class="center indigo-text">Media Outreach</h2>
   <div>
   <div class="row">
- <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="3000" data-caption="THE QUINT" src="{{url_for('static', filename='img/paper1.png')}}">
- <img class="materialboxed col l4 s12" data-aos="flip-right" data-aos-duration="3000" data-caption="THE ECONOMIC TIMES" src="{{url_for('static', filename='img/paper2.png')}}">
- <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="3000" data-caption="The IndiaEXPRESS" src="{{url_for('static', filename='img/paper3.png')}}">
+ <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="3000" data-caption="THE QUINT" src="./img/paper1.png">
+ <img class="materialboxed col l4 s12" data-aos="flip-right" data-aos-duration="3000" data-caption="THE ECONOMIC TIMES" src="./img/paper2.png">
+ <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="3000" data-caption="The IndiaEXPRESS" src="./img/paper3.png">
 </div>
   <div class="row">
- <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="3000" data-caption="INDIA NEWS" src="{{url_for('static', filename='img/paper4.png')}}">
- <img class="materialboxed col l4 s12" data-aos="flip-right" data-aos-duration="3000" data-caption="DAILYHUNT" src="{{url_for('static', filename='img/paper5.png')}}">
- <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="3000" data-caption="" src="{{url_for('static', filename='img/paper6.png')}}">
+ <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="3000" data-caption="INDIA NEWS" src="./img/paper4.png">
+ <img class="materialboxed col l4 s12" data-aos="flip-right" data-aos-duration="3000" data-caption="DAILYHUNT" src="./img/paper5.png">
+ <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="3000" data-caption="" src="./img/paper6.png">
 </div>
   <div class="row">
- <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="3000" data-caption="DAINIK JAGRAN" src="{{url_for('static', filename='img/paper7.png')}}">
- <img class="materialboxed col l4 s12" data-aos="flip-right" data-aos-duration="3000" data-caption="PRABHAT KHABAR" src="{{url_for('static', filename='img/paper8.png')}}">
- <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="3000" data-caption="DEVDISCOURSE" src="{{url_for('static', filename='img/paper9.png')}}">
+ <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="3000" data-caption="DAINIK JAGRAN" src="./img/paper7.png">
+ <img class="materialboxed col l4 s12" data-aos="flip-right" data-aos-duration="3000" data-caption="PRABHAT KHABAR" src="./img/paper8.png">
+ <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="3000" data-caption="DEVDISCOURSE" src="./img/paper9.png">
 </div>
  </div>
 </div>
   <br>
-
-
 
 <section class="section section-icons grey lighten-4 center scrollspy" id="Benfits">
     <div class="container">
@@ -448,19 +507,19 @@ a img{
       <div class="row">
         <div class="col s12 m4">
           <div class="card-panel" data-aos="flip-left" data-aos-duration="2000">
-          	<img src="{{url_for('static', filename='svg/robot.svg')}}" width="100px" height="100px">
+          	<img src="./svg/robot.svg" width="100px" height="100px">
             <p>Promote the culture of innovation among students in the domain of science.</p>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="card-panel" data-aos="flip-left" data-aos-duration="3000">
-          	<img src="{{url_for('static', filename='svg/diploma.svg')}}" width="100px" height="100px">
+          	<img src="./svg/diploma.svg" width="100px" height="100px">
             <p>Compete with top Indian schools and get evaluated by IIT faculties and scholars.</p>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="card-panel" data-aos="flip-left" data-aos-duration="3000">
-          	<img src="{{url_for('static', filename='svg/university.svg')}}" width="100px" height="100px">
+          	<img src="./svg/university.svg" width="100px" height="100px">
             <p> Share the delightful experience of visiting the largest IIT campus. </p>
           </div>
         </div>
@@ -487,11 +546,11 @@ Registration fees: To be declared.
     <div id="test2" class="col s12" style="font-size: 1.1rem;"><h2 class="purple-text">Round 1</h2>
     	The team will submit their abstract of the project ideas briefing the scientific proposal based on the chosen theme. The online submissions of the projects will be done by the coordinating teacher by using his/her user id and password on the portal. Round 1 results will be released both on our website. All participants who make it to the next round will also receive the news via email. The selected students will proceed to round 2.
     </div>
-    <div id="test3" class="col s12" style="font-size: 1.1rem;"><h2 class="purple-text">Round 2 (Semifinal)</h2>
+    <div id="test3" class="col s12" style="font-size: 1.1rem;"><h2 class="purple-text">Round 2</h2>
     	Selected students will submit their full-fledged description of the proposal (via the coordinating teacher by using his/her user ID and password) comprising of complete technical description, laboratory work, cost and sustainability analysis, survey if conducted and future prospects.
     </div>
     <div id="test4" class="col s12" style="font-size: 1.1rem !important;">
-    	<h2 class="purple-text">Round 3 (Final)</h2>
+    	<h2 class="purple-text">Round 3</h2>
     	Top teams nationwide will be selected after the semifinal round and they will be called to Indian Institute of Technology, Kharagpur to exhibit and demonstrate their models or prototype and charts which will be evaluated by professors of IIT Kharagpur. The selected team need to confirm their presence for a two-day event held in IIT Kharagpur.The registration fees for this round will be declared after the announcement of the results of the 1st round.
     </div>
     <div id="test5" class="col s12" style="font-size: 1.1rem !important;">
@@ -500,15 +559,14 @@ Registration fees: To be declared.
 		Start of two day finals of the Young Innovators' program at IIT Kharagpur.
     </div>
   </div>
-
-<br>
+  <br>
 
 <h2 class="center purple-text scrollspy" id="testi">Testimonials</h2>
   <div>
   <div class="row">
- <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="2000" data-caption="Message from The Director" src="{{url_for('static', filename='img/test.png')}}">
- <img class="materialboxed col l4 s12" data-aos="flip-right" data-aos-duration="2000" data-caption="Message from The Dean" src="{{url_for('static', filename='img/test1.png')}}">
- <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="2000" data-caption="Message from The Associate Dean" src="{{url_for('static', filename='img/test2.png')}}">
+ <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="2000" data-caption="Message from The Director" src="./img/test.png">
+ <img class="materialboxed col l4 s12" data-aos="flip-right" data-aos-duration="2000" data-caption="Message from The Dean" src="./img/test1.png">
+ <img class="materialboxed col l4 s12" data-aos="flip-left" data-aos-duration="2000" data-caption="Message from The Associate Dean" src="./img/test2.png">
 </div>
  </div>
 
@@ -516,15 +574,12 @@ Registration fees: To be declared.
 <br>
 
 
-
-
-
            <footer class="page-footer"  style="background: #004d38">
           <div >
             <div class="row">
               <div class="col l4 s12">
                 <h5 class="white-text">Contact</h5>
-                <p> Branding and Relations Cell<br/> Office of Alumni Affairs & International Relations<br/> Indian Institute of Technology, Kharagpur <br/> Pin-721302 West Bengal, India <br/> <strong>Phone:</strong><br> 8967498335 (Bhaskar Basak) <br/> 8804178378 (Bhavya Kumar) <br/> <strong>Email:</strong> barc@iitkgp.ac.in </p>
+                <p>Office of Alumni Affairs & International Relations<br/> Indian Institute of Technology, Kharagpur <br/> Pin-721302 West Bengal, India <br/> <strong>Phone:</strong> <br/>8967498335 (Bhaskar Basak) <br/>8804178378 (Bhavya Kumar)<br/>9521421101 (Annanya Singh)<br>9468785224 (Parth Gupta) <br> 9821250939 (Divyam Sharma)<br> <strong>Email:</strong> barc@iitkgp.ac.in </p>
               </div>
               <div class="col l4 s12">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d784.9332419499943!2d87.30956309721707!3d22.3193820950838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3a63547376e5c22c!2sMain+Building+IIT+KGP!5e0!3m2!1sen!2sin!4v1471677047994" width="100%" height="40%" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -535,22 +590,22 @@ Registration fees: To be declared.
               
                 <div class="col">
                     <a href="https://www.facebook.com/barciitkgp/" target="_blank">
-                        <img src="{{url_for('static', filename='img/fb.png')}}" width="30" style="border-radius: 50%;">
+                        <img src="./img/fb.png" width="30" style="border-radius: 50%;">
                     </a>
                 </div>
                 <div class="col">
                     <a href="https://twitter.com/IITKgp" target="_blank">
-                        <img src="{{url_for('static', filename='img/twitter.png')}}" width="30">
+                        <img src="./img/twitter.png" width="30">
                     </a>
                 </div>
                 <div class="col">
                     <a href="https://www.youtube.com/channel/UCNrhzapF2ZwRdUvoAUO8ytg" target="_blank">
-                        <img src="{{url_for('static', filename='img/youtube.png')}}" width="30">
+                        <img src="./img/youtube.png" width="30">
                     </a>
                 </div>
                 <div class="col">
                     <a href="https://www.linkedin.com/company/brandingandrelationscell" target="_blank">
-                        <img src="{{url_for('static', filename='img/linkedin.png')}}" width="30"> 
+                        <img src="./img/linkedin.png" width="30"> 
                     </a>
                 </div>
                  <div class="col-xs-8"></div>
@@ -560,15 +615,14 @@ Registration fees: To be declared.
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2019 Branding And Relations Cell,IIT Kharagpur.
-            </div>
+            © 2019 Young Innovators' Program, IIT Kharagpur.
           </div>
         </footer>       
   <!-- Compiled and minified JavaScript -->
-  <script type="text/javascript" src="{{url_for('static', filename='jquery.js')}}"></script>
-  <script type="text/javascript" src="{{url_for('static', filename='main.js')}}"></script>
-  <script type="text/javascript" src="{{url_for('static', filename='aos.js')}}"></script>
-<script src="{{url_for('static', filename='yipjs.js')}}"></script>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="aos.js"></script>
+<script src="yipjs.js"></script>
 
   <script>   
         // Sidenav
@@ -624,7 +678,7 @@ M.Materialbox.init(photoBox, {});
       $('.carousel').carousel('prev');
    });
         setInterval(function(){
-      $('.carousel.carousel-slider').carousel('next');
+      $('#first_one').carousel('next');
     },5000);
 
             $(window).scroll(function() {
@@ -664,5 +718,6 @@ M.Materialbox.init(photoBox, {});
 });
 
   </script>
+
 </body>
 </html>
