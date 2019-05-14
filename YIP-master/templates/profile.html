@@ -148,7 +148,7 @@ a img{
       <div class="file-path-wrapper">
         <input class="file-path validate" type="text" placeholder="Upload">
       </div>
-	  <a class="waves-effect waves-light btn right" type="submit">Upload</a>
+	  <a class="waves-effect waves-light btn right" type="submit" onsubmit="closeUpload()">Upload</a>
     </div>
   </form></td>
         </tr>
@@ -278,6 +278,15 @@ a img{
         })
 		console.log("hey buddy  ")
       });
+
+
+      function closeUpload(){
+        let wrapper = $('.file-path-wrapper');
+        $('.validate').remove();
+        $('.file-path-wrapper a').remove();
+        wrapper.text("You have successfully uploaded your submission!");
+
+      }
   
   </script>
 
